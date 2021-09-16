@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.json01">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Json01">
         <activity
-            android:name=".MainActivity"
+            android:name=".Vista.Contacto"
+            android:exported="true"
+            android:parentActivityName=".Vista.MainActivity"/>
+        <activity
+            android:name=".Vista.AcercaDe"
+            android:exported="true"
+            android:parentActivityName=".Vista.MainActivity"/>
+        <activity
+            android:name=".Vista.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
